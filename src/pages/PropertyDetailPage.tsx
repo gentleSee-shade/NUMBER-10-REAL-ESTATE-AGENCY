@@ -55,7 +55,7 @@ export const PropertyDetailPage: React.FC = () => {
     );
   }
 
-  // Gallery array: main image + 4 thumbs
+  // Gallery array: main image plus any additional uploaded photos
   const allImages = [property.images.main, ...property.images.gallery];
 
   // Related properties: same deal or area, excluding current
@@ -218,32 +218,36 @@ export const PropertyDetailPage: React.FC = () => {
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
                   <div className="absolute bottom-4 right-4 bg-[#0C1B3F]/85 backdrop-blur-sm text-white px-3.5 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5">
                     <Maximize2 className="w-3.5 h-3.5 text-[#E6C770]" />
-                    <span>View 5 Photos</span>
+                    <span>
+                      View {allImages.length} {allImages.length === 1 ? 'Photo' : 'Photos'}
+                    </span>
                   </div>
                 </div>
 
-                {/* 4 Thumbnails */}
-                <div className="grid grid-cols-4 gap-3">
-                  {property.images.gallery.map((img, idx) => (
-                    <div
-                      key={idx}
-                      onClick={() => {
-                        setActiveImageIndex(idx + 1);
-                        setLightboxOpen(true);
-                      }}
-                      className="relative aspect-[4/3] rounded-xl overflow-hidden bg-[#0C1B3F] cursor-pointer group border border-[#E3E7F0] hover:border-[#14295A] transition-all"
-                    >
-                      <SmartImage
-                        src={img}
-                        alt={`${property.title} view ${idx + 2}`}
-                        aspectRatio="4/3"
-                        variant={property.artVariant}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                      />
-                      <div className="absolute inset-0 bg-black/15 group-hover:bg-transparent transition-colors" />
-                    </div>
-                  ))}
-                </div>
+                {/* Additional image thumbnails */}
+                {property.images.gallery.length > 0 && (
+                  <div className="grid grid-cols-4 gap-3">
+                    {property.images.gallery.map((img, idx) => (
+                      <div
+                        key={idx}
+                        onClick={() => {
+                          setActiveImageIndex(idx + 1);
+                          setLightboxOpen(true);
+                        }}
+                        className="relative aspect-[4/3] rounded-xl overflow-hidden bg-[#0C1B3F] cursor-pointer group border border-[#E3E7F0] hover:border-[#14295A] transition-all"
+                      >
+                        <SmartImage
+                          src={img}
+                          alt={`${property.title} view ${idx + 2}`}
+                          aspectRatio="4/3"
+                          variant={property.artVariant}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        />
+                        <div className="absolute inset-0 bg-black/15 group-hover:bg-transparent transition-colors" />
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* KEY DETAILS GRID */}

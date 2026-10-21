@@ -58,13 +58,8 @@ export const PROPERTIES: Property[] = [
     ],
     artVariant: 'villa',
     images: {
-      main: '/images/properties/prop-1-main.svg',
-      gallery: [
-        '/images/properties/prop-1-living.svg',
-        '/images/properties/prop-1-kitchen.svg',
-        '/images/properties/prop-1-bedroom.svg',
-        '/images/properties/prop-1-exterior.svg',
-      ],
+      main: '/images/number-10/Modern-4-bedroom-residence-image.jpeg',
+      gallery: [],
     },
   },
   {
@@ -96,13 +91,8 @@ export const PROPERTIES: Property[] = [
     ],
     artVariant: 'house',
     images: {
-      main: '/images/properties/prop-2-main.svg',
-      gallery: [
-        '/images/properties/prop-2-living.svg',
-        '/images/properties/prop-2-dining.svg',
-        '/images/properties/prop-2-master.svg',
-        '/images/properties/prop-2-garden.svg',
-      ],
+      main: '/images/number-10/Contemporary-family-home-image.jpeg',
+      gallery: [],
     },
   },
   {
@@ -136,13 +126,8 @@ export const PROPERTIES: Property[] = [
     ],
     artVariant: 'apartment',
     images: {
-      main: '/images/properties/prop-3-main.svg',
-      gallery: [
-        '/images/properties/prop-3-balcony.svg',
-        '/images/properties/prop-3-lounge.svg',
-        '/images/properties/prop-3-suite.svg',
-        '/images/properties/prop-3-pool.svg',
-      ],
+      main: '/images/number-10/Apartment-image.jpeg',
+      gallery: [],
     },
   },
   {
@@ -171,13 +156,8 @@ export const PROPERTIES: Property[] = [
     ],
     artVariant: 'land',
     images: {
-      main: '/images/properties/prop-4-main.svg',
-      gallery: [
-        '/images/properties/prop-4-survey.svg',
-        '/images/properties/prop-4-road.svg',
-        '/images/properties/prop-4-boundary.svg',
-        '/images/properties/prop-4-elevation.svg',
-      ],
+      main: '/images/number-10/Residential-plot-image.jpeg',
+      gallery: ['/images/number-10/Residential-plot-image-2.jpeg'],
     },
   },
   {
@@ -209,13 +189,8 @@ export const PROPERTIES: Property[] = [
     ],
     artVariant: 'office',
     images: {
-      main: '/images/properties/prop-5-main.svg',
-      gallery: [
-        '/images/properties/prop-5-reception.svg',
-        '/images/properties/prop-5-openplan.svg',
-        '/images/properties/prop-5-boardroom.svg',
-        '/images/properties/prop-5-facade.svg',
-      ],
+      main: '/images/number-10/Serviced-office-suite-image.jpeg',
+      gallery: [],
     },
   },
   {
@@ -248,13 +223,8 @@ export const PROPERTIES: Property[] = [
     ],
     artVariant: 'house',
     images: {
-      main: '/images/properties/prop-6-main.svg',
-      gallery: [
-        '/images/properties/prop-6-living.svg',
-        '/images/properties/prop-6-kitchen.svg',
-        '/images/properties/prop-6-patio.svg',
-        '/images/properties/prop-6-master.svg',
-      ],
+      main: '/images/number-10/Three-bedroom-townhouse-image.jpeg',
+      gallery: [],
     },
   },
 ];

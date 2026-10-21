@@ -10,15 +10,15 @@ export interface ImageSlot {
 export const IMAGE_SLOTS: Record<string, ImageSlot> = {
   hero: {
     id: 'hero',
-    src: '/images/hero/hero-architectural.jpg',
-    alt: 'Modernist architectural property in Accra, Ghana',
+    src: '/images/number-10/Hero-image.jpeg',
+    alt: 'Modern Accra property featured by Number 10 Real Estate',
     aspectRatio: '16/11',
     placeholderVariant: 'villa',
     descriptionForFutureAsset: 'High-end contemporary Ghanaian architectural elevation with warm dusk lighting and tropical foliage.',
   },
   office: {
     id: 'office',
-    src: '/images/office/office-interior.jpg',
+    src: '/images/number-10/Office-image.jpeg',
     alt: 'Number 10 Real Estate office interior at Dome Kboat, Accra',
     aspectRatio: '4/3',
     placeholderVariant: 'office',
@@ -26,7 +26,7 @@ export const IMAGE_SLOTS: Record<string, ImageSlot> = {
   },
   shopfront: {
     id: 'shopfront',
-    src: '/images/office/shopfront-exterior.jpg',
+    src: '/images/number-10/Shop-front-image.jpeg',
     alt: 'Number 10 Real Estate & Management shopfront at Dome Kboat',
     aspectRatio: '4/3',
     placeholderVariant: 'shopfront',
